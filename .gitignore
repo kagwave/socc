@@ -1,0 +1,15 @@
+/target
+
+/.venv
+
+/r.md
+
+/src/operator
+/src/stabilizer
+/src/py
+/src/bin
+
+*.md
+/py
+/benches
+/doc

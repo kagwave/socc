@@ -1,0 +1,34 @@
+[package]
+name = "clifford"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <you@example.com>"]
+description = "State-operator Clifford compatibility framework for N-qubit quantum information."
+license = "MIT OR Apache-2.0"
+repository = "https://example.com/replace-with-your-repo" # TODO: update
+
+[dependencies]
+rayon = { version = "1.7", optional = true }
+
+[features]
+default = []
+parallel = ["rayon"]
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "runtime_state"
+harness = false
+
+[[bench]]
+name = "mem_kernels"
+harness = false
+
+[[bench]]
+name = "fallback_profiling"
+harness = false
+
+# [[bench]]
+# name = "simd_vs_scalar"
+# harness = false

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["maturin>=1.5"]
+build-backend = "maturin"
+
+[project]
+name = "socc"
+version = "0.1.0"
+description = "State-Operator Clifford Compatibility algebra toolkit"
+requires-python = ">=3.10"
+authors = [{name="Kagwe Muchane"}]
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.maturin]
+python-source = "python"
+module-name = "socc._native"
